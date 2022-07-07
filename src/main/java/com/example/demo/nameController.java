@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class nameController {
     @GetMapping(value ="/grett/{name}/{correo}/{edad}")
     public ResponseEntity<String>grett(@PathVariable ("name") String name, @PathVariable("correo") String correo, @PathVariable("edad") int edad){
+        ConnectionMysql resultSet;
         return new ResponseEntity<>( "Hello " +name + correo + edad, HttpStatus.OK);
     }
 }
