@@ -10,11 +10,11 @@ public class ConnectionMysql {
     private JdbcProperties jdbcProperties;
     private JdbcTemplateAutoConfiguration jdbcTemplateAutoConfiguration;
 
-    public static void run() throws ClassNotFoundException, SQLException {
-        Class.forName("com.mysql.jdbc.Driver");
-        con= DriverManager.getConnection("jdbc:mysql://localhost:3306/AppCertus","root","Aarom456");
-        Statement sentencia = con.createStatement();
-        ResultSet resultSet = sentencia.executeQuery("Select * from personas");
+    public static void run() {
+        //Class.forName("com.mysql.jdbc.Driver");
+        //con= DriverManager.getConnection("jdbc:mysql://localhost:3306/AppCertus","root","Aarom456");
+        //Statement sentencia = con.createStatement();
+        //ResultSet resultSet = sentencia.executeQuery("Select * from personas");
         String sentenciaSql = "insert into personas (namePrincipal, correoPersona, edad) values (?,?,?);";
     }
 }

@@ -1,3 +1,6 @@
 com\example\demo\ConnectionMysql.class
 com\example\demo\DemoApplication.class
+com\example\demo\nameEntity.class
+com\example\demo\nameInterface.class
 com\example\demo\nameController.class
+com\example\demo\nameInplements.class
